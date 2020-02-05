@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Intercop.Services.Cliente</name>
+    </assembly>
+    <members>
+        <member name="M:Intercop.Services.Cliente.Controller.ClientesController.Post(Intercop.Services.Cliente.Dto.AddCliente)">
+            <summary>
+            Crea un cliente
+            </summary>
+            <param name="cliente">Objeto que recibe como parametros</param>
+            <returns>Cliente creado</returns>
+            <response code="200">Resultado correcto</response>
+            <response code="500">Error interno del servidor</response>
+        </member>
+        <member name="M:Intercop.Services.Cliente.Controller.ClientesController.GetKpiDeClientes">
+            <summary>
+            Obtiene KPI de Clientes
+            </summary>
+            <returns>Cliente creado</returns>
+            <response code="200">Resultado correcto</response>
+            <response code="500">Error interno del servidor</response>
+        </member>
+        <member name="M:Intercop.Services.Cliente.Controller.ClientesController.GetList">
+            <summary>
+            Obtiene lista de clientes con posible fecha de muerte
+            </summary>
+            <returns>Cliente creado</returns>
+            <response code="200">Se agrego correctamente</response>
+            <response code="500">Error interno del servidor</response>
+        </member>
+        <member name="M:Intercop.Services.Cliente.Domain.Business.ClienteBusiness.GetSumaCuadradoDeDistacia(System.Collections.Generic.IEnumerable{System.Int32},System.Double)">
+            <summary>
+            Obtiene la suma de el cuadrado de cada elemento menos la media
+            </summary>
+            <param name="edades"></param>
+            <param name="media"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intercop.Services.Cliente.Domain.Business.ClienteBusiness.GetMedia(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Obtiene la media de las edades
+            </summary>
+            <param name="edades"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Intercop.Services.Cliente.Domain.Cliente.Nombre">
+            <summary>
+            Nombre del cliente
+            </summary>
+        </member>
+        <member name="P:Intercop.Services.Cliente.Domain.Cliente.Apellido">
+            <summary>
+            Apellido del cliente
+            </summary>
+        </member>
+        <member name="P:Intercop.Services.Cliente.Domain.Cliente.Edad">
+            <summary>
+            Edad del cliente
+            </summary>
+        </member>
+        <member name="P:Intercop.Services.Cliente.Domain.Cliente.FechaNacimiento">
+            <summary>
+            Fecha de nacimiento del cliente
+            </summary>
+        </member>
+        <member name="P:Intercop.Services.Cliente.Dto.AddCliente.Nombre">
+            <summary>
+            Nombre del cliente
+            </summary>
+        </member>
+        <member name="P:Intercop.Services.Cliente.Dto.AddCliente.Apellido">
+            <summary>
+            Apellido del cliente
+            </summary>
+        </member>
+        <member name="P:Intercop.Services.Cliente.Dto.AddCliente.Edad">
+            <summary>
+            Edad del cliente
+            </summary>
+        </member>
+        <member name="P:Intercop.Services.Cliente.Dto.AddCliente.FechaNacimiento">
+            <summary>
+            Fecha de nacimiento del cliente
+            </summary>
+        </member>
+        <member name="M:Intercop.Services.Cliente.Dto.AddCliente.NullOrEmpty(System.String)">
+            <summary>
+            Deberia usar algun framework de validacion
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
