@@ -10,7 +10,7 @@ namespace Intercop.Services.Cliente.Dto
         private int edadPromedioVida = 71;
         public DateTime FechaProbableMuerte { get; private set; }
 
-        public ClientePosibleMuerte(string nombre, string apellido, int edad, DateTime fechaNacimiento, Guid clienteId) : base(nombre, apellido, edad, fechaNacimiento, clienteId)
+        public ClientePosibleMuerte(string nombre, string apellido, int edad, DateTime fechaNacimiento) : base(nombre, apellido, edad, fechaNacimiento)
         {
             var aniosRestantesDeVida = edadPromedioVida - edad;
 
