@@ -8,9 +8,11 @@ WORKDIR /src
 COPY ["src/Services/Intercop.Services.Cliente/Intercop.Services.Cliente.csproj", "src/Services/Intercop.Services.Cliente/"]
 COPY ["src/Common/Intercop.Common.Utils/Intercop.Common.Utils/Intercop.Common.Utils.csproj", "src/Common/Intercop.Common.Utils/Intercop.Common.Utils/"]
 RUN dotnet restore "src/Services/Intercop.Services.Cliente/Intercop.Services.Cliente.csproj"
+
 COPY . .
 WORKDIR "/src/src/Services/Intercop.Services.Cliente"
 RUN dotnet build "Intercop.Services.Cliente.csproj" -c Release -o /app
+RUN dotnet ef database update
 
 FROM build AS publish
 RUN dotnet publish "Intercop.Services.Cliente.csproj" -c Release -o /app

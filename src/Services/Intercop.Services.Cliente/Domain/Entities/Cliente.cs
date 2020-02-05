@@ -33,7 +33,7 @@ namespace Intercop.Services.Cliente.Domain
             Apellido = apellido;
             Edad = edad;
             FechaNacimiento = fechaNacimiento;
-            ClienteId = new Guid();
+            ClienteId = Guid.NewGuid();
         }
 
         private void IsClientValid(int edad, DateTime fechaNacimiento)
